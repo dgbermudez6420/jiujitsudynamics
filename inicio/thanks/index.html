@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations! Your Order Is Ready</title>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1260947998848575');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none" 
+           src="https://www.facebook.com/tr?id=1260947998848575&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- UTMify scripts -->
+    <script
+      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-subids
+      async
+      defer
+    ></script>
+
+    <script>
+      window.pixelId = "69bf31eff96abb555face382";
+      var a = document.createElement("script");
+      a.setAttribute("async", "");
+      a.setAttribute("defer", "");
+      a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+      document.head.appendChild(a);
+    </script>
+    <!-- End UTMify scripts -->
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for High-Impact Sporty Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;0,900;1,900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        brandRed: '#D32F2F',
+                        brandRedDark: '#991B1B',
+                        brandGold: '#C5A030',
+                        brandGoldHover: '#B08E28',
+                        darkBg: '#121212',
+                        darkCard: '#1E1E1E',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes stripe-slide {
+            from { background-position: 0 0; }
+            to { background-position: 40px 0; }
+        }
+        .animate-stripes {
+            background-size: 40px 40px;
+            background-image: linear-gradient(
+                45deg,
+                rgba(255, 255, 255, 0.15) 25%,
+                transparent 25%,
+                transparent 50%,
+                rgba(255, 255, 255, 0.15) 50%,
+                rgba(255, 255, 255, 0.15) 75%,
+                transparent 75%,
+                transparent
+            );
+            animation: stripe-slide 1.5s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans antialiased overflow-x-hidden">
+
+    <!-- TOP ALERT BAR -->
+    <div class="bg-[#439c6c] text-white text-center py-2.5 px-4 font-display font-bold text-xs sm:text-sm tracking-wider uppercase sticky top-0 z-50 shadow-md">
+        🎉 Congratulations! Your payment has been processed successfully and your access is ready.
+    </div>
+
+    <!-- HERO SECTION & PROGRESS COMPLETED (100%) -->
+    <header class="bg-darkBg text-white py-14 px-4 relative border-b border-zinc-800">
+        <!-- Grid overlay matching premium look -->
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f1f1f_1px,transparent_1px),linear-gradient(to_bottom,#1f1f1f_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none opacity-40"></div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="mb-6">
+                <span class="inline-block bg-emerald-500/10 border border-emerald-500/30 text-emerald-500 font-display font-black tracking-widest text-xs px-4 py-1.5 rounded-full mb-4">
+                    ✓ ORDER COMPLETED SUCCESSFULLY
+                </span>
+                <h1 class="font-display font-black text-3xl sm:text-4xl md:text-5xl uppercase tracking-tight leading-tight mb-2">
+                    WELCOME TO THE <span class="text-brandGold">NEXT LEVEL</span>! 🥋👊
+                </h1>
+                <p class="text-zinc-400 font-medium text-sm sm:text-base max-w-2xl mx-auto">
+                    You are officially a member. Your account access and interactive Jiu-Jitsu resources have been successfully set up.
+                </p>
+            </div>
+
+            <!-- Custom Progress Bar (100% Completed Style) -->
+            <div class="bg-zinc-900/50 p-5 rounded-2xl max-w-2xl mx-auto mb-2 border border-zinc-800/80">
+                <div class="flex justify-between items-center text-xs sm:text-sm font-semibold tracking-wide text-zinc-300 mb-1.5">
+                    <span>Account Setup Status</span>
+                    <span class="text-emerald-500 font-bold">100% Completed!</span>
+                </div>
+                <!-- Outer bar (White background for unfilled space as seen in image) -->
+                <div class="w-full bg-white/10 rounded-full h-5 overflow-hidden p-0">
+                    <!-- Progress Filled (100% - Green `#439c6c` with diagonal stripes) -->
+                    <div id="progressBar" class="bg-[#439c6c] h-full rounded-full animate-stripes relative flex items-center justify-end pr-3 transition-all duration-1000" style="width: 100%">
+                        <span class="text-white text-[10px] sm:text-xs font-bold leading-none select-none">100%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN 3-STEP FLOW INSTRUCTIONS -->
+    <section class="py-16 px-4 bg-white border-b border-gray-100">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="text-brandRed font-display font-bold uppercase tracking-widest text-xs">Follow these steps</span>
+                <h2 class="font-display font-black text-2xl sm:text-3xl uppercase tracking-tight text-gray-900 mt-1">
+                    3 SIMPLE STEPS TO GET STARTED 👇
+                </h2>
+                <div class="w-16 h-1 bg-brandRed mx-auto mt-4"></div>
+            </div>
+
+            <!-- Steps Container -->
+            <div class="space-y-8">
+                
+                <!-- STEP 1 CARD -->
+                <div class="bg-gray-50 border border-gray-200 rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-md transition duration-200 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 bg-brandRed text-white font-display font-black text-xs px-4 py-1.5 rounded-br-2xl uppercase tracking-wider">
+                        Step 1
+                    </div>
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pt-4">
+                        <div class="flex-1">
+                            <h3 class="font-display font-extrabold text-lg sm:text-xl text-zinc-900 uppercase tracking-wide flex items-center mb-2">
+                                <span class="mr-2 text-2xl">✉️</span> CHECK YOUR INBOX
+                            </h3>
+                            <p class="text-sm text-zinc-600 leading-relaxed">
+                                We have sent you an automatic welcome email from <strong class="text-zinc-900">Hotmart</strong>. This email contains your purchase confirmation and the official link to access the student dashboard and your interactive training materials.
+                            </p>
+                            <p class="text-xs text-brandRed font-bold mt-2.5 flex items-center gap-1.5">
+                                <span>⚠️</span> If you do not see it in your primary inbox, please make sure to check your Spam, Junk, or Promotions folders.
+                            </p>
+                        </div>
+                        <div class="bg-white border border-gray-200/80 p-4 rounded-2xl flex flex-col items-center justify-center text-center shadow-sm min-w-[180px]">
+                            <span class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Sender:</span>
+                            <span class="text-xs font-bold text-zinc-800 bg-gray-100 px-2.5 py-1 rounded-md">Hotmart</span>
+                            <span class="text-[11px] text-gray-500 mt-1.5">"Access your product"</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 2 CARD -->
+                <div class="bg-gray-50 border border-gray-200 rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-md transition duration-200 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 bg-brandGold text-zinc-950 font-display font-black text-xs px-4 py-1.5 rounded-br-2xl uppercase tracking-wider">
+                        Step 2
+                    </div>
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pt-4">
+                        <div class="flex-1">
+                            <h3 class="font-display font-extrabold text-lg sm:text-xl text-zinc-900 uppercase tracking-wide flex items-center mb-2">
+                                <span class="mr-2 text-2xl">🔑</span> CREATE YOUR PASSWORD
+                            </h3>
+                            <p class="text-sm text-zinc-600 leading-relaxed">
+                                Inside the welcome email sent by <strong class="text-zinc-900">Hotmart</strong>, you will find an activation button or link. Click on it to **create and set up your password**. This step is mandatory to initialize your profile and unlock the training materials.
+                            </p>
+                            <p class="text-xs text-brandGold font-bold mt-2.5 flex items-center gap-1.5">
+                                <span>🔒</span> Your password ensures that your personal student account and training progress remain fully secure.
+                            </p>
+                        </div>
+                        <div class="bg-white border border-gray-200/80 p-4 rounded-2xl flex flex-col items-center justify-center text-center shadow-sm min-w-[180px]">
+                            <span class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Required Action:</span>
+                            <span class="text-xs font-bold text-brandGold bg-amber-50 px-2.5 py-1 rounded-md">Set Password</span>
+                            <span class="text-[11px] text-gray-500 mt-1.5">Inside Hotmart Email</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- STEP 3 CARD -->
+                <div class="bg-gray-50 border border-gray-200 rounded-3xl p-6 sm:p-8 shadow-sm hover:shadow-md transition duration-200 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 bg-emerald-600 text-white font-display font-black text-xs px-4 py-1.5 rounded-br-2xl uppercase tracking-wider">
+                        Step 3
+                    </div>
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 pt-4">
+                        <div class="flex-1">
+                            <h3 class="font-display font-extrabold text-lg sm:text-xl text-zinc-900 uppercase tracking-wide flex items-center mb-2">
+                                <span class="mr-2 text-2xl">🚀</span> LOG IN & EXPLORE YOUR CONTENT
+                            </h3>
+                            <p class="text-sm text-zinc-600 leading-relaxed">
+                                After successfully setting up your password, you can log in to the Hotmart platform using your registered email address and your new password. We highly recommend bookmarking the login page so you can easily access your Jiu-Jitsu Drills whenever you are on or off the mats.
+                            </p>
+                        </div>
+                        <div class="bg-white border border-gray-200/80 p-4 rounded-2xl flex flex-col items-center justify-center text-center shadow-sm min-w-[180px]">
+                            <span class="text-xs font-bold text-gray-400 uppercase tracking-widest mb-1">Access Credentials:</span>
+                            <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-md">Email + Password</span>
+                            <span class="text-[11px] text-gray-500 mt-1.5">For Hotmart Portal</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CUSTOMER SUPPORT SECTION -->
+    <section class="py-16 px-4 bg-zinc-950 text-white relative border-t border-zinc-800">
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#141414_1px,transparent_1px),linear-gradient(to_bottom,#141414_1px,transparent_1px)] bg-[size:3rem_3rem] opacity-30"></div>
+        
+        <div class="max-w-3xl mx-auto relative z-10 text-center">
+            <span class="text-brandGold font-display font-black tracking-widest text-xs uppercase bg-brandGold/10 border border-brandGold/30 px-4 py-1.5 rounded-full inline-block mb-4">
+                NEED ASSISTANCE? INSTANT SUPPORT
+            </span>
+            <h2 class="font-display font-black text-2xl sm:text-3xl uppercase tracking-tight text-white mb-4">
+                WE ARE HERE TO HELP YOU 🤝
+            </h2>
+            <p class="text-zinc-400 text-sm sm:text-base max-w-xl mx-auto mb-8 leading-relaxed">
+                If you experience any issues accessing your digital products, setting up your credentials, or have any other questions, please reach out to us directly via email:
+            </p>
+
+            <!-- Support Email Block with Interactive Copy -->
+            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6 max-w-lg mx-auto shadow-2xl">
+                <p class="text-xs text-zinc-500 uppercase font-bold tracking-widest mb-2">Our Support Email:</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-3 bg-zinc-950 p-3 rounded-2xl border border-zinc-850">
+                    <span id="supportEmail" class="text-brandGold font-mono font-bold text-sm sm:text-base select-all">
+                        academiadigital3010@gmail.com
+                    </span>
+                    <button onclick="copyEmailToClipboard()" class="bg-zinc-800 hover:bg-zinc-700 text-white text-[11px] font-bold px-3 py-1.5 rounded-xl transition duration-150 flex items-center gap-1 active:scale-95">
+                        <span id="copyBtnText">Copy email</span>
+                    </button>
+                </div>
+                <p class="text-[11px] text-zinc-500 mt-3">
+                    We typically respond to all support tickets within 12 to 24 business hours.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER WITH SATISFACTION GUARANTEE SHIELD -->
+    <footer class="py-12 px-4 bg-gray-100 text-center border-t border-gray-200">
+        <div class="max-w-2xl mx-auto">
+            <!-- Shield Icon SVG representing safety -->
+            <div class="w-12 h-12 bg-zinc-900 text-brandGold rounded-full flex items-center justify-center mx-auto mb-4 border border-zinc-850 shadow-md">
+                🛡️
+            </div>
+            <h3 class="font-display font-black text-xs tracking-wider uppercase text-zinc-800">
+                JIU-JITSU RETENTION GUARANTEE
+            </h3>
+            <p class="text-[11px] text-zinc-500 leading-relaxed max-w-md mx-auto mt-1.5 mb-8">
+                Your purchase is fully backed by our unconditional satisfaction policy. We stand behind our operational systems to help you build a stronger academy.
+            </p>
+            <div class="border-t border-gray-200/80 pt-6">
+                <p class="text-zinc-500 text-xs font-semibold">
+                    © 2026 Academia Digital. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- NOTIFICATION TOAST -->
+    <div id="notificationToast" class="fixed bottom-5 right-5 bg-zinc-900 text-white border border-zinc-800 p-4 rounded-2xl shadow-2xl z-[110] max-w-sm hidden transition-all duration-300 transform translate-y-10">
+        <div class="flex items-center space-x-3">
+            <span id="toastIcon" class="text-xl">✅</span>
+            <div>
+                <h4 id="toastTitle" class="font-display font-bold text-sm text-white">Action Completed</h4>
+                <p id="toastBody" class="text-zinc-400 text-xs mt-0.5">The process executed successfully.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT FOR DYNAMIC PROGRESS & INTERACTION -->
+    <script>
+        // Simulate progress bar completing to 100% smoothly on load
+        window.addEventListener('load', () => {
+            const bar = document.getElementById('progressBar');
+            bar.style.width = '0%';
+            setTimeout(() => {
+                bar.style.width = '100%';
+            }, 250);
+        });
+
+        // Copy support email functionality using standard document.execCommand fallback
+        function copyEmailToClipboard() {
+            const emailText = document.getElementById('supportEmail').innerText.trim();
+            
+            // Create temporary textarea element to copy text
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = emailText;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+            
+            try {
+                const successful = document.execCommand('copy');
+                if (successful) {
+                    const btnText = document.getElementById('copyBtnText');
+                    btnText.innerText = 'Copied!';
+                    showToast('Email Copied', 'Our support email address has been copied to your clipboard.', '📋');
+                    
+                    setTimeout(() => {
+                        btnText.innerText = 'Copy email';
+                    }, 3000);
+                } else {
+                    showToast('Error copying', 'Please select and copy the email address manually.', '❌');
+                }
+            } catch (err) {
+                showToast('Error copying', 'Please select and copy the email address manually.', '❌');
+            }
+            
+            document.body.removeChild(tempTextArea);
+        }
+
+        // Beautiful custom toast notification matching parent design
+        function showToast(title, body, icon = "✅") {
+            const toast = document.getElementById('notificationToast');
+            document.getElementById('toastTitle').innerText = title;
+            document.getElementById('toastBody').innerText = body;
+            document.getElementById('toastIcon').innerText = icon;
+            
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.remove('translate-y-10');
+            }, 50);
+
+            setTimeout(() => {
+                toast.classList.add('translate-y-10');
+                setTimeout(() => {
+                    toast.classList.add('hidden');
+                }, 300);
+            }, 3500);
+        }
+    </script>
+</body>
+</html>
